@@ -1,0 +1,43 @@
+body {
+    background-color: #101010;
+}
+
+.container {
+    padding-left: 24px;
+}
+
+.dark-div {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 56px;
+    background-color: #202020;
+}
+
+.button {
+    color: #FFF;
+    margin-right: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 24px;
+}
+
+.dark-teal-container {
+    background-color: #00695C;
+}
+
+h1 {
+    font-size: 60px;
+    color: #FFF;
+}
+
+h3 {
+    font-size: 30px;
+    color: #FFF;
+}
+
+h4 {
+    font-size: 20px;
+    color: #FFF;
+}
