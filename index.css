@@ -1,43 +1,82 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #101010;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
-.container {
-    padding-left: 24px;
+body::after {
+    content: '';
+    display: block;
+    height: 64px;
 }
 
-.dark-div {
+a {
+    text-decoration: none;
+}
+
+.title-text, .title-text-small {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+.title-text {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.title-text-small {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.header-tag, .tag, .last-tag, .content-text, .footer, .nevbar-btn {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.header-tag {
+    margin-top: 18px;
+}
+
+.nevbar-btn {
+    margin-left: 16px;
+}
+
+.header-text {
+    margin-top: 18px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.tag, .last-tag {
+    margin-right: 8px;
+}
+
+.tag {
+    margin-bottom: 8px;
+}
+
+.last-tag {
+    margin-bottom: 18px;
+}
+
+.footer {
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin: 56px;
-    background-color: #202020;
-}
-
-.button {
-    color: #FFF;
-    margin-right: 32px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    font-size: 24px;
-}
-
-.dark-teal-container {
-    background-color: #00695C;
-}
-
-h1 {
-    font-size: 60px;
-    color: #FFF;
-}
-
-h3 {
-    font-size: 30px;
-    color: #FFF;
-}
-
-h4 {
-    font-size: 20px;
-    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
