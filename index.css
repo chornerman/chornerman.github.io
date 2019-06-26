@@ -84,3 +84,20 @@ hr {
     margin-bottom: 0px;
     border-color: #505050;
 }
+
+@media only screen and (max-width: 601px) {
+    .toolbar {
+        background-color: #303030;
+        padding: 8px;
+    }
+    
+    .content-parent {
+        margin-bottom: 8px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .outer-card {
+        margin-top: 8px;
+    }
+}
