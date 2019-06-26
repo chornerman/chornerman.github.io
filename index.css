@@ -90,14 +90,10 @@ hr {
         background-color: #303030;
         padding: 8px;
     }
-    
+
     .content-parent {
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         padding-left: 0px;
         padding-right: 0px;
-    }
-
-    .outer-card {
-        margin-top: 8px;
     }
 }
