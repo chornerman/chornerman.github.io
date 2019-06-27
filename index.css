@@ -6,6 +6,16 @@ a {
     text-decoration: none;
 }
 
+::-moz-selection {
+    color: white;
+    background: #009688;
+}
+  
+::selection {
+    color: white;
+    background: #009688;
+}
+
 .toolbar {
     background-color: #303030;
     padding-top: 16px;
@@ -16,14 +26,23 @@ a {
     margin-left: 16px;
     font-size: 32px;
     font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
+    color: white;
+}
+
+.title-text:hover {
+    color: #C0C0C0;
 }
 
 .nevbar-button {
     margin-left: 32px;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: #2bcbba;
+    letter-spacing: 1px;
+    color: #00BFA5;
+}
+
+.nevbar-button:hover {
+    color: #009688;
 }
 
 .content-parent {
@@ -49,9 +68,10 @@ a {
 .header-text {
     margin-top: 16px;
     margin-bottom: 0px;
-    font-size: 32px;
+    font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: #2bcbba;
+    letter-spacing: 2px;
+    color: #00BFA5;
 }
 
 .subheader-text {
@@ -59,7 +79,7 @@ a {
     margin-bottom: 0px;
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
+    color: white;
 }
 
 .content-text {
@@ -67,7 +87,7 @@ a {
     margin-bottom: 0px;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: #c0c0c0;
+    color: #C0C0C0;
 }
 
 .button {
@@ -76,7 +96,8 @@ a {
     margin-bottom: 0px;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: #2bcbba;
+    letter-spacing: 1px;
+    color: #00BFA5;
 }
 
 hr {
@@ -85,7 +106,7 @@ hr {
     border-color: #505050;
 }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 600px) {
     .toolbar {
         background-color: #303030;
         padding: 8px;
