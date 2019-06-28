@@ -90,6 +90,18 @@ a {
     color: #C0C0C0;
 }
 
+.content-text-link {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: #00BFA5;
+}
+
+.link:hover {
+    color: #009688;
+}
+
 .button {
     background-color: #303030;
     margin-top: 24px;
@@ -108,7 +120,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
     .toolbar {
-        background-color: #303030;
+        background-color: #009688;
         padding: 8px;
     }
 
