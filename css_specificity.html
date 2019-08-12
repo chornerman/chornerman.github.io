@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css_specificity.css">
+    <title>CSS Specificity</title>
+</head>
+
+<body>
+    <div class="w3-container w3-yellow bar">
+        <span class="w3-tag w3-black w3-xxxlarge">CSS Specificity</span>
+        <a href="https://chornerman.github.io"><span class="w3-tag w3-white w3-xxxlarge w3-hover-yellow">by
+                chornerman</span></a>
+    </div>
+
+    <div class="w3-row-padding w3-theme content-parent">
+
+        <div class="w3-third">
+
+            <div class="w3-panel w3-black w3-padding-large">
+                <div class="w3-tag w3-white w3-xxlarge">CSS Specificity คืออะไร?</div>
+                <p class="w3-text-white w3-xlarge">CSS Specificity คือระบบคำนวนค่าความสำคัญของ CSS style เพื่อให้
+                    browser รู้ว่าต้องนำ style ใดมาแสดงผล โดย browser จะนำ attribute ของ style
+                    ที่มีค่าความสำคัญสูงสุดมาแสดงผล style แต่ละแบบมีลำดับความสำคัญต่างกัน
+                    เรียงลำดับค่าความสำคัญจากมากไปน้อยได้ดังนี้<br><br>1. !important<br>2. inline style<br>3. ID
+                    selectors<br>4. class selectors<br>5. type selectors</p>
+            </div>
+
+            <div class="w3-panel w3-white w3-padding-large">
+                <div class="w3-tag w3-black w3-xxlarge">!important</div>
+                <p class="w3-xlarge">มีความสำคัญสูงสุด นำไปใส่ไว้ที่ style ใด หมายความว่าต้องใช้ style นั้นเสมอ เช่น</p>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align">//CSS<br>.blue {color: blue !important;}</div>
+                <div></div>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align w3-margin-top">//HTML<br>&lt;p class="blue"
+                    style="color: red">text&lt;/p&gt;</div>
+                <p class="w3-xlarge">p จะแสดงผลเป็นสีฟ้า ถึงแม้ว่า inline style จะระบุให้ใช้สีแดงก็ตาม</p>
+            </div>
+
+        </div>
+
+        <div class="w3-third">
+
+            <div class="w3-panel w3-white w3-padding-large">
+                <div class="w3-tag w3-black w3-xxlarge">inline style</div>
+                <p class="w3-xlarge">คือการใส่ style ไว้ใน html tag
+                    มีความสำคัญรองลงมาจาก !important เช่น</p>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align">
+                    //CSS<br>#blue {color: blue;}</div>
+                <div></div>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align w3-margin-top">//HTML<br>
+                    &lt;p id="blue" style="color: red">text&lt;/p&gt;</div>
+                <p class="w3-xlarge">p จะแสดงผลเป็นแดงตามที่ระบุใน inline
+                    style</p>
+            </div>
+
+            <div class="w3-panel w3-white w3-padding-large">
+                <div class="w3-tag w3-black w3-xxlarge">ID selectors
+                </div>
+                <p class="w3-xlarge">มีความสำคัญรองจาก inline style
+                    ใช้สำหรับจัดกลุ่ม style attribute ให้กับ element</p>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align">
+                    //CSS<br>#blue {color: blue;}<br>.red {color: red;}</div>
+                <div></div>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align w3-margin-top">//HTML<br>
+                    &lt;p id="blue" class="red">text&lt;/p&gt;</div>
+                <p class="w3-xlarge">p จะแสดงผลเป็นสีฟ้า เนื่องจาก id
+                    มีค่าความสำคัญสูงกว่า class</p>
+            </div>
+
+        </div>
+
+        <div class="w3-third">
+
+            <div class="w3-panel w3-white w3-padding-large">
+                <div class="w3-tag w3-black w3-xxlarge">class
+                    selectors
+                </div>
+                <p class="w3-xlarge">มีความสำคัญรองจาก ID
+                    ใช้สำหรับจัดกลุ่ม style attribute ให้กับ element เช่นเดียวกับ ID เช่น</p>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align">
+                    //CSS<br>.blue {color: blue;}<br>p {color: red;}</div>
+                <div></div>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align w3-margin-top">//HTML<br>
+                    &lt;p class="blue">text&lt;/p&gt;<br>&lt;p>text2&lt;/p&gt;</div>
+                <p class="w3-xlarge">text จะแสดงผลเป็นสีฟ้า ในขณะที่
+                    text2 จะแสดงผลเป็นสีแดง
+                </p>
+            </div>
+
+            <div class="w3-panel w3-white w3-padding-large">
+                <div class="w3-tag w3-black w3-xxlarge">type selectors</div>
+                <p class="w3-xlarge">ใช้สำหรับกำหนด style
+                    attribute ให้กับ tag ต่างๆ เช่น</p>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align">
+                    //CSS<br>p {color: blue;}</div>
+                <div></div>
+                <div class="w3-tag w3-yellow w3-xlarge w3-left-align w3-margin-top">//HTML<br>
+                    &lt;p>text&lt;/p&gt;</div>
+                <p class="w3-xlarge">
+                    text จะแสดงผลเป็นสีฟ้า</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w3-container w3-yellow mini-bar">
+        <span class="w3-tag w3-white w3-xxlarge">How to
+            calculate</span>
+        <span class="w3-tag w3-black w3-xxlarge ">CSS
+            Specificity</span>
+    </div>
+
+    <div class="w3-container w3-yellow center-text">
+        <p class="w3-xlarge">
+            ถ้ามีค่าความสำคัญเท่ากันเลือก CSS selector ที่อยู่ด้านล่างมาแสดงผล<br><span
+                class="w3-tag w3-black w3-xlarge">.classname h2 a { }</span>
+            คำนวณค่าความสำคัญโดยนำค่าความสำคัญของ classname + h2 + a
+            แล้วนำมาเปรียบเทียบกันตามปกติ<br>selector ที่มีค่าความสำคัญมากกว่าจะถูกนำมาแสดงผล</p>
+    </div>
+
+    <div class="w3-container w3-black mini-bar">
+        <a href="https://chornerman.github.io"><i class="fa fa-home w3-xxlarge footer-icon"></i></a>
+        <a href="https://github.com/chornerman"><i class="fa fa-github w3-xxlarge footer-icon"></i></a>
+        <a href="mailto:chornerman@hotmail.com"><i class="fa fa-envelope w3-xxlarge"></i></a>
+    </div>
+</body>
+
+</html>
