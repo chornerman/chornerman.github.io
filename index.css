@@ -90,6 +90,18 @@ a {
     color: #C0C0C0;
 }
 
+.content-duration-text {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: #C0C0C0;
+}
+
+.content-icon {
+    margin-right: 8px
+}
+
 .content-text-link {
     margin-top: 16px;
     margin-bottom: 0px;
