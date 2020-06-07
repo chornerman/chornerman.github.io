@@ -99,7 +99,7 @@ a {
 }
 
 .content-icon {
-    margin-right: 8px
+    margin-right: 8px;
 }
 
 .content-text-link {
@@ -130,7 +130,79 @@ hr {
     border-color: #484848;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .title-text {
+        margin-left: 16px;
+        font-size: 30px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+    }
+
+    .nevbar-button {
+        margin-left: 32px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        letter-spacing: 1px;
+        color: #00BFA5;
+    }
+
+    .header-text {
+        margin-top: 16px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-family: 'Quicksand', sans-serif;
+        letter-spacing: 1px;
+        color: #00BFA5;
+    }
+    
+    .subheader-text {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 22px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+    }
+    
+    .content-text {
+        margin-top: 16px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        color: #C0C0C0;
+    }
+    
+    .content-status-text {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        color: #C0C0C0;
+    }
+
+    .content-text-link {
+        margin-top: 16px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        color: #00BFA5;
+    }
+
+    .button {
+        background-color: #303030;
+        margin-top: 24px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        letter-spacing: 1px;
+        color: #00BFA5;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .w3-third {
+        width: 100%;
+    }
+
     .toolbar {
         background-color: #009688;
         padding: 8px;
@@ -141,6 +213,10 @@ hr {
         font-size: 30px;
         font-family: 'Quicksand', sans-serif;
         color: white;
+    }
+
+    .nevbar-button {
+        display: none;
     }
 
     .content-parent {
