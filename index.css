@@ -6,6 +6,12 @@ a {
     text-decoration: none;
 }
 
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color: #484848;
+}
+
 ::-moz-selection {
     color: white;
     background: #009688;
@@ -25,7 +31,7 @@ a {
 }
 
 .title-text {
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
@@ -36,7 +42,7 @@ a {
 
 .nevbar-button {
     margin-left: 32px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
     color: #00BFA5;
@@ -60,16 +66,14 @@ a {
 
 .inner-container {
     background-color: #303030;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 
 .header-text {
     margin-top: 16px;
     margin-bottom: 0px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
     color: #00BFA5;
@@ -78,7 +82,7 @@ a {
 .subheader-text {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
@@ -86,15 +90,27 @@ a {
 .content-text {
     margin-top: 16px;
     margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: #C0C0C0;
+}
+
+.content-text-link {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: #00BFA5;
+}
+
+.content-text-link:hover {
+    color: #009688;
 }
 
 .content-status-text {
     margin-top: 8px;
     margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: #C0C0C0;
 }
@@ -103,118 +119,16 @@ a {
     margin-right: 8px;
 }
 
-.content-text-link {
-    margin-top: 16px;
-    margin-bottom: 0px;
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
-    color: #00BFA5;
-}
-
-.link:hover {
-    color: #009688;
-}
-
 .button {
     background-color: #303030;
     margin-top: 24px;
-    margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
     color: #00BFA5;
 }
 
-hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-color: #484848;
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1300px) {
-    .toolbar {
-        background-color: #303030;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .title-text {
-        font-size: 30px;
-        font-family: 'Quicksand', sans-serif;
-        color: white;
-    }
-
-    .nevbar-button {
-        margin-left: 32px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        letter-spacing: 1px;
-        color: #00BFA5;
-    }
-
-    .inner-container {
-        background-color: #303030;
-        margin-top: 22px;
-        margin-bottom: 22px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .header-text {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 14px;
-        font-family: 'Quicksand', sans-serif;
-        letter-spacing: 1px;
-        color: #00BFA5;
-    }
-    
-    .subheader-text {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 22px;
-        font-family: 'Quicksand', sans-serif;
-        color: white;
-    }
-    
-    .content-text {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        color: #C0C0C0;
-    }
-    
-    .content-status-text {
-        margin-top: 8px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        color: #C0C0C0;
-    }
-
-    .content-text-link {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        color: #00BFA5;
-    }
-
-    .button {
-        background-color: #303030;
-        margin-top: 22px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        letter-spacing: 1px;
-        color: #00BFA5;
-    }
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     .w3-third {
         width: 100%;
     }
@@ -227,78 +141,12 @@ hr {
         padding-right: 24px;
     }
 
-    .title-text {
-        font-size: 30px;
-        font-family: 'Quicksand', sans-serif;
-        color: white;
-    }
-
     .nevbar-button {
         display: none;
     }
 
     .content-parent {
-        margin-bottom: 16px;
         padding-left: 0px;
         padding-right: 0px;
-    }
-
-    .inner-container {
-        background-color: #303030;
-        margin-top: 22px;
-        margin-bottom: 22px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .header-text {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 14px;
-        font-family: 'Quicksand', sans-serif;
-        letter-spacing: 1px;
-        color: #00BFA5;
-    }
-    
-    .subheader-text {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 22px;
-        font-family: 'Quicksand', sans-serif;
-        color: white;
-    }
-    
-    .content-text {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        color: #C0C0C0;
-    }
-    
-    .content-status-text {
-        margin-top: 8px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        color: #C0C0C0;
-    }
-
-    .content-text-link {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        color: #00BFA5;
-    }
-
-    .button {
-        background-color: #303030;
-        margin-top: 22px;
-        margin-bottom: 0px;
-        font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
-        letter-spacing: 1px;
-        color: #00BFA5;
     }
 }
