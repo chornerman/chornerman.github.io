@@ -18,8 +18,7 @@ a {
 
 .toolbar {
     background-color: #303030;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px;
 }
 
 .title-text {
@@ -130,7 +129,7 @@ hr {
     border-color: #484848;
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
     .title-text {
         margin-left: 16px;
         font-size: 30px;
