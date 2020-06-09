@@ -22,6 +22,12 @@ hr {
     background: #009688;
 }
 
+.header-line {
+    width: 100%;
+    height: 4px;
+    background-color: #009688;
+}
+
 .toolbar {
     background-color: #303030;
     padding-top: 16px;
@@ -31,7 +37,7 @@ hr {
 }
 
 .title-text {
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
@@ -44,7 +50,6 @@ hr {
     margin-left: 30px;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
-    letter-spacing: 1px;
     color: #00BFA5;
 }
 
@@ -70,14 +75,14 @@ hr {
 
 .inner-container {
     background-color: #303030;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .header-text {
     margin-top: 16px;
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
     color: #00BFA5;
@@ -86,13 +91,13 @@ hr {
 .subheader-text {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
 
 .content-text {
-    margin-top: 16px;
+    margin-top: 12px;
     margin-bottom: 0px;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
@@ -112,7 +117,7 @@ hr {
 }
 
 .content-status-text {
-    margin-top: 8px;
+    margin-top: 6px;
     margin-bottom: 0px;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
@@ -125,16 +130,20 @@ hr {
 
 .button {
     background-color: #303030;
-    margin-top: 22px;
-    font-size: 16px;
+    margin-top: 20px;
+    font-size: 14px;
     font-family: 'Quicksand', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #00BFA5;
 }
 
 @media only screen and (max-width: 900px) {
     .w3-third {
         width: 100%;
+    }
+
+    .header-line {
+        display: none;
     }
 
     .toolbar {
