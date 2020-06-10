@@ -3,7 +3,12 @@ body {
 }
 
 a {
+    color: #00BFA5;
     text-decoration: none;
+}
+
+a:hover {
+    color: #009688;
 }
 
 hr {
@@ -22,6 +27,11 @@ hr {
     background: #009688;
 }
 
+.center {
+    max-width: 1600px; 
+    margin: 0 auto;
+}
+
 .header-line {
     width: 100%;
     height: 4px;
@@ -29,9 +39,15 @@ hr {
 }
 
 .toolbar {
+    width: 100%;
+    top: 0;
+    position: fixed;
     background-color: #303030;
-    padding-top: 16px;
-    padding-bottom: 16px;
+}
+
+.toolbar-menu {
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -58,7 +74,7 @@ hr {
 }
 
 .content-parent {
-    margin-top: 12px;
+    margin-top: 82px;
     margin-left: 6px;
     margin-right: 6px;
 }
@@ -75,8 +91,8 @@ hr {
 
 .inner-container {
     background-color: #303030;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .header-text {
@@ -89,8 +105,8 @@ hr {
 }
 
 .subheader-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     color: white;
@@ -98,43 +114,52 @@ hr {
 
 .content-text {
     margin-top: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: #C0C0C0;
 }
 
-.content-text-link {
-    margin-top: 16px;
-    margin-bottom: 0px;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    color: #00BFA5;
-}
-
-.content-text-link:hover {
-    color: #009688;
-}
-
 .content-status-text {
-    margin-top: 6px;
-    margin-bottom: 0px;
+    margin-top: 4px;
+    margin-bottom: 0;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: #C0C0C0;
 }
 
 .content-icon {
-    margin-right: 8px;
+    margin-right: 6px;
+    font-size: 14px;
 }
 
 .button {
     background-color: #303030;
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 0.5px;
     color: #00BFA5;
+}
+
+.footer {
+    width: 100%;
+    background-color: #303030;
+}
+
+.footer-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    color: #C0C0C0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -148,6 +173,9 @@ hr {
 
     .toolbar {
         background-color: #009688;
+    }
+
+    .toolbar-menu {
         padding-top: 8px;
         padding-bottom: 8px;
         padding-left: 24px;
@@ -159,7 +187,15 @@ hr {
     }
 
     .content-parent {
+        margin-top: 70px;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .footer-container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
