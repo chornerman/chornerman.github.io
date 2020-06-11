@@ -17,11 +17,6 @@ hr {
     border-color: #484848;
 }
 
-::-moz-selection {
-    color: white;
-    background: #009688;
-}
-  
 ::selection {
     color: white;
     background: #009688;
@@ -31,6 +26,10 @@ hr {
     max-width: 1600px; 
     margin: 0 auto;
 }
+
+.right {
+    float: right;
+} 
 
 .header-line {
     width: 100%;
@@ -135,6 +134,7 @@ hr {
 
 .button {
     background-color: #303030;
+    border-radius: 4px;
     margin-top: 18px;
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
@@ -144,7 +144,7 @@ hr {
 
 .footer {
     width: 100%;
-    background-color: #303030;
+    background-color: #282B2D;
 }
 
 .footer-container {
@@ -152,6 +152,10 @@ hr {
     padding-bottom: 16px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.footer-container-mobile {
+    display: none;
 }
 
 .footer-text {
@@ -167,6 +171,10 @@ hr {
         width: 100%;
     }
 
+    .w3-round {
+        border-radius: 0;
+    }
+
     .header-line {
         display: none;
     }
@@ -178,8 +186,8 @@ hr {
     .toolbar-menu {
         padding-top: 8px;
         padding-bottom: 8px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .nevbar-button {
@@ -192,10 +200,20 @@ hr {
         margin-right: 0px;
     }
 
+    .outer-card {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .footer-container {
+        display: none;
+    }    
+
+    .footer-container-mobile {
+        display: block;
         padding-top: 12px;
         padding-bottom: 12px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
