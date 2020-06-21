@@ -81,7 +81,7 @@ hr {
     margin-top: 82px;
     margin-left: 6px;
     margin-right: 6px;
-    padding-bottom: 66px;
+    padding-bottom: 52px;
 }
 
 .outer-card {
@@ -206,6 +206,7 @@ hr {
         margin-top: 70px;
         margin-left: 0px;
         margin-right: 0px;
+        padding-bottom: 66px;
     }
 
     .outer-card {
