@@ -1,0 +1,20 @@
+[
+    {
+        "date": "01/01/2020",
+        "numbers": [
+            3,
+            6,
+            9
+        ],
+        "result": "Correct"
+    },
+    {
+        "date": "16/01/2020",
+        "numbers": [
+            1,
+            2,
+            3
+        ],
+        "result": "Wrong"
+    }
+]
