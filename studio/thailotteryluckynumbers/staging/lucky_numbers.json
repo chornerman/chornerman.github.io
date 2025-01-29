@@ -1,0 +1,91 @@
+[
+    {
+        "date": "17/01/2025",
+        "numbers": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "date": "02/01/2025",
+        "numbers": [
+            3,
+            4,
+            5
+        ],
+        "result": "Incorrect"
+    },
+    {
+        "date": "16/12/2024",
+        "numbers": [
+            6,
+            7,
+            8
+        ],
+        "result": "Correct"
+    },
+    {
+        "date": "01/12/2024",
+        "numbers": [
+            9,
+            8,
+            7
+        ],
+        "result": "Incorrect"
+    },
+    {
+        "date": "16/11/2024",
+        "numbers": [
+            6,
+            5,
+            4
+        ],
+        "result": "Correct"
+    },
+    {
+        "date": "01/11/2024",
+        "numbers": [
+            3,
+            2,
+            1
+        ],
+        "result": "Incorrect"
+    },
+    {
+        "date": "16/10/2024",
+        "numbers": [
+            0,
+            1,
+            2
+        ],
+        "result": "Correct"
+    },
+    {
+        "date": "01/10/2024",
+        "numbers": [
+            3,
+            4,
+            5
+        ],
+        "result": "Incorrect"
+    },
+    {
+        "date": "16/09/2024",
+        "numbers": [
+            6,
+            7,
+            8
+        ],
+        "result": "Correct"
+    },
+    {
+        "date": "01/09/2024",
+        "numbers": [
+            9,
+            8,
+            7
+        ],
+        "result": "Incorrect"
+    }
+]
